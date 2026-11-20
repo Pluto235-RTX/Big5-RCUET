@@ -1,0 +1,13 @@
+- Các tình huống thu thập ảnh:
+	+ TH1: Kệ đầy ( 2 - 4 sản phẩm trong mỗi ngăn( thay đổi góc quay, thay đổi các loại hàng với nhau) 
+	+ TH2: Kệ thiếu hàng: 1 hoặc nhiều sp bị lấy ra trong 1 loại nào đó ( chưa bị lẫn ) 
+	+ TH3: lẫn với nhau 
+	+ TH4: Có tay, bóng đổ che khuất một phần
+
+- Mỗi đứa -> 75 ảnh 
+	+ TH1: 13
+	+ TH2: 20
+	+ TH3: 22
+	+ TH4: 20
+
+- Tiêu chí: (gửi sau) 
