@@ -1,8 +1,12 @@
+0, Bài toán: 
+	+ trong các siêu thị chưa xuất hiện những giải pháp như thế này mà đa số chỉ dựa vào thủ công
+
+
 1, Giới hạn bài toán 
 	+ Mỗi ngăn được gắn trước cho 1 loại sản phẩm nhất định
 	+ Mỗi ngăn chỉ chứa khoảng 2–4 sản phẩm, không xếp chồng hoặc che khuất nhau.
-	+ Sử dụng 3 sản phẩm có bao bì khác nhau rõ rệt.
-	+ Camera và ánh sáng được cố định.
+	+ Sử dụng 3 sản phẩm có bao bì khác nhau rõ rệt
+	+ Camera và ánh sáng được cố định, ánh sáng chiếu sáng đều.
 	+ Chỉ giám sát hàng hóa *đang có trên kệ*, không theo dõi khách hàng hay hàng trong kho
 
 2, Yêu cầu MVP: ( Giải pháp công nghệ: 1 camera (đthoại) + AI object detection )
@@ -18,7 +22,11 @@
 		+ Có thể giải quyết được 2 bài toán: đếm số lượng và xác định vị trí chỉ bằng một thiết bị thu hình
 		+ Phần khó xử lý bằng phần mềm thay vì tăng số lượng linh kiện
 	+ Nhược điểm:
-		+ Chỉ áp dung được khi các mặt hàng không bị che khuất
+		+ Chỉ áp dung được khi các mặt hàng không bị che khuất hoàn toàn
 
+4, Các sản phẩm mẫu:
+	+ Milo, custas , chocopie ( nền màu trắng ) 
+	+ custas, chocopie , milo ( nền carton) 
+	+ thiết kế về kệ: 
 
 	
