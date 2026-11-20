@@ -1,0 +1,24 @@
+1, Giới hạn bài toán 
+	+ Mỗi ngăn được gắn trước cho 1 loại sản phẩm nhất định
+	+ Mỗi ngăn chỉ chứa khoảng 2–4 sản phẩm, không xếp chồng hoặc che khuất nhau.
+	+ Sử dụng 3 sản phẩm có bao bì khác nhau rõ rệt.
+	+ Camera và ánh sáng được cố định.
+	+ Chỉ giám sát hàng hóa *đang có trên kệ*, không theo dõi khách hàng hay hàng trong kho
+
+2, Yêu cầu MVP: ( Giải pháp công nghệ: 1 camera (đthoại) + AI object detection )
+	+ Nhận diện sản phẩm: Phân biệt được 3 loại sản phẩm
+	+ Đếm số lượng: Đếm số sản phẩm nhìn thấy ở mỗi ngăn, số sản phẩm mỗi loại
+	+ Phát hiện hết hàng: Cảnh báo khi một ngăn không 
+	+ Phát hiện đặt nhầm: Ví dụ: Bánh ở ngăn B thay vì ngăn A 
+	+ Cập nhật tự động: Khi lấy/ thêm sản phẩm, số lượng được cập nhật
+	+ Hiển thị sản phẩm: Tên sản phẩm, ngăn sai và số lượng trên màn hình
+
+3, Tại sao lại chọn giải pháp này: 
+	+ Ưu điểm
+		+ Có thể giải quyết được 2 bài toán: đếm số lượng và xác định vị trí chỉ bằng một thiết bị thu hình
+		+ Phần khó xử lý bằng phần mềm thay vì tăng số lượng linh kiện
+	+ Nhược điểm:
+		+ Chỉ áp dung được khi các mặt hàng không bị che khuất
+
+
+	
