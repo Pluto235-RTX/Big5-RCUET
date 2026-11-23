@@ -12,7 +12,7 @@ from ultralytics import YOLO
 st.set_page_config(page_title="Kho hàng thông minh - Nhóm 5", layout="wide")
 st.title("📦 Hệ thống Giám sát Kệ hàng Thông minh")
 
-# Thay link GitHub Releases trực tiếp tới tệp best.pt vào đây
+
 BEST_PT_URL = "https://github.com/Pluto235-RTX/Big5-RCUET/blob/main/TESTING/runs/my_project/obj_detecter/weights/best.pt"
 LOCAL_WEIGHTS_PATH = Path("best.pt")
 
