@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['chocopie', 'custas', 'milo']
+
+roboflow:
+  workspace: big5-rcuet
+  project: big5-rcuet
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/big5-rcuet/big5-rcuet/dataset/1
