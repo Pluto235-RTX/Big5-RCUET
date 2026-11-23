@@ -12,7 +12,7 @@ from ultralytics import YOLO
 st.set_page_config(page_title="Kho hàng thông minh - Nhóm 5", layout="wide")
 st.title("📦 Hệ thống Giám sát Kệ hàng Thông minh")
 
-# Thay link GitHub Releases trực tiếp tới tệp best.pt của nhóm vào đây
+# Thay link GitHub Releases trực tiếp tới tệp best.pt vào đây
 BEST_PT_URL = ""
 LOCAL_WEIGHTS_PATH = Path("best.pt")
 
@@ -20,10 +20,6 @@ VI_LABELS = {
     "chocopie": "ChocoPie",
     "custas": "Custas",
     "milo": "Milo",
-    "person": "người",
-    "bottle": "chai",
-    "cup": "cốc / ly",
-    "book": "sách",
 }
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -122,7 +118,6 @@ for zone_name, raw_default in default_raw.items():
 
 st.sidebar.divider()
 conf_threshold = st.sidebar.slider("Ngưỡng độ tự tin (Confidence)", 0.1, 1.0, 0.40, 0.05)
-ignore_person = st.sidebar.checkbox("Bỏ qua người (person) khi kiểm kê", value=True)
 
 if st.sidebar.button("🔄 Đặt lại lịch sử quét"):
     st.session_state.prev_counts = Counter()
@@ -157,9 +152,6 @@ if img_file is not None:
 
     for box in results[0].boxes:
         raw_cls = model.names[int(box.cls[0])]
-        if ignore_person and raw_cls == "person":
-            continue
-
         conf_val = float(box.conf[0])
         x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())
         cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
